@@ -1,4 +1,4 @@
-package br.com.mlb.service;
+package br.com.mlb.person;
 
 import static org.junit.jupiter.api.Assertions.*;
 

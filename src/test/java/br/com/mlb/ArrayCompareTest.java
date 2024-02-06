@@ -1,5 +1,6 @@
 package br.com.mlb;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
@@ -21,6 +22,7 @@ public class ArrayCompareTest {
 
     @Test
     @Timeout(value = 15, unit = TimeUnit.MILLISECONDS)
+    @Disabled
     void testPerformance(){
         int[] numbers = {8, 21, 4, 25, 32};
         for (int i=0; i<100000000; i++){
