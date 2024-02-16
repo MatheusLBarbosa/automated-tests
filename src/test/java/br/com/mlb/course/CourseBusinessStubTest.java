@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class CourseBusinessTest {
+public class CourseBusinessStubTest {
 
     @DisplayName("Test Method coursesRelatedToSpring() using a stub")
     @Test
