@@ -15,13 +15,13 @@ import static org.hamcrest.Matchers.*;
 
 
 public class CourseBusinessMockWithBDDTest {
-    ICourseService mockService;
+    CourseService mockService;
     CourseBusiness business;
     List<String> courses;
 
     @BeforeEach
     public void setup() {
-        mockService = mock(ICourseService.class);
+        mockService = mock(CourseService.class);
         business = new CourseBusiness(mockService);
         courses = Arrays.asList(
                 "REST API's RESTFul do 0 à Azure com ASP.NET Core 5 e Docker",

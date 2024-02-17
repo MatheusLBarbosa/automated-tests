@@ -11,7 +11,7 @@ public class CourseBusinessStubTest {
     @DisplayName("Test Method coursesRelatedToSpring() using a stub")
     @Test
     void testCoursesRelatedToSpring_When_UsingAStub(){
-        ICourseService stubService = new CourseServiceStub();
+        CourseService stubService = new CourseServiceStub();
         CourseBusiness business = new CourseBusiness(stubService);
 
         //When
@@ -24,7 +24,7 @@ public class CourseBusinessStubTest {
     @DisplayName("Test Method coursesRelatedToSpring() using a stub")
     @Test
     void testCoursesRelatedToSpring_When_UsingAFooBarStudent(){
-        ICourseService stubService = new CourseServiceStub();
+        CourseService stubService = new CourseServiceStub();
         CourseBusiness business = new CourseBusiness(stubService);
 
         //When

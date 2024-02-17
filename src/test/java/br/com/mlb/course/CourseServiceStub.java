@@ -1,10 +1,9 @@
 package br.com.mlb.course;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CourseServiceStub implements ICourseService{
+public class CourseServiceStub implements CourseService {
     @Override
     public List<String> retrieveCourses(String student) {
         return Arrays.asList(

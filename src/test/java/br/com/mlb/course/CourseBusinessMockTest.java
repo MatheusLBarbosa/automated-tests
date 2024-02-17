@@ -6,20 +6,19 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.mockito.stubbing.Answer;
 
 import java.util.Arrays;
 import java.util.List;
 
 
 public class CourseBusinessMockTest {
-    ICourseService mockService;
+    CourseService mockService;
     CourseBusiness business;
     List<String> courses;
 
     @BeforeEach
     public void setup() {
-        mockService = mock(ICourseService.class);
+        mockService = mock(CourseService.class);
         business = new CourseBusiness(mockService);
         courses = Arrays.asList(
                 "Microsserviços do 0 com Spring Cloud, Kotlin e Docker",
